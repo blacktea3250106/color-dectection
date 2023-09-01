@@ -1,6 +1,6 @@
 # Color Detection
 
-![Demo](screenshots/color-dectection.png)
+![Demo](screenshots/color-dectection-white.png)
 
 ## Introduction
 
@@ -8,9 +8,11 @@ The "color-detection" project is a Python program that analyzes images to identi
 
 ## Features
 
+- Build an extensive color code database.
 - Load and display images.
 - Extract HSV color features from images.
 - Convert HSV colors to RGB and RGB to HEX color codes.
+- Calculate color differences using the Euclidean distance formula.
 - Predict and display the closest matching color for each image.
 
 ## Installation
@@ -29,10 +31,10 @@ To run the "color-detection" program, follow these steps:
     cd color-detection
     ```
 
-3. Install the required Python packages using pip:
+3. Install Jupyter Notebook using pip if you haven't already:
 
     ```
-    pip install -r requirements.txt
+    pip install notebook
     ```
 
 ## Usage
@@ -41,13 +43,19 @@ To run the "color-detection" program, follow these steps:
 
 2. Open a terminal and navigate to the project directory.
 
-3. Run the program using the following command:
+3. Start Jupyter Notebook by running the following command:
 
     ```
-    python color_detection.py
+    jupyter notebook
     ```
 
-4. The program will analyze the images in the `images` directory and display the original images, their prominent color in RGB format, and the predicted closest matching color along with its HEX color code.
+4. In the Jupyter Notebook interface, open `color_detection.ipynb` to run the program.
+
+5. The program will analyze the images in the `images` directory and display the original images, their prominent color in RGB format, and the predicted closest matching color along with its HEX color code and the calculated color difference.
+
+## Notebooks
+
+- The main notebook for this project is `color_detection.ipynb`.
 
 ## License
 
@@ -56,3 +64,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - The predefined color palette and color matching algorithm are based on Wikipedia's color code data.
+- The extensive color code database is a valuable resource for precise color matching.
